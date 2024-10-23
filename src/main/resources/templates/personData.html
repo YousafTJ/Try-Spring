@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>Information</title>
+</head>
+<body>
+<h1 class="persondata">CV</h1>
+
+<div class="container">
+
+<div class="display-information">
+<p>First name: <span th:text="${yousaf.firstName}"></span></p>
+<p>Last name: <span th:text="${yousaf.lastName}"></span></p>
+<p>Mail: <span th:text="${yousaf.mail}"></span></p>
+<p>Phone number: <span th:text="${yousaf.number}"></span></p>
+    <a th:href="${yousaf.profileUrl}">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" class="linkedin">
+    </a>
+    <p>Description: <span class="description-text" th:text="${yousaf.description}"></span></p>
+
+</div>
+    <div class="display-qualities">
+<h2>Qualities</h2>
+<ul>
+    <li th:each="quality : ${yousaf.qualities}" th:text="${quality}"></li>
+</ul>
+
+</div>
+
+
+    <div class="experience-container">
+        <div><h2>Experience</h2>
+        <div class="title-box">
+        <ul>
+            <li th:each="title : ${yousaf.title}" th:text="${title}"></li>
+        </ul>
+        </div>
+        <div class="company-box">
+            <ul>
+                <li th:each="company : ${yousaf.company}" th:text="${company}"></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

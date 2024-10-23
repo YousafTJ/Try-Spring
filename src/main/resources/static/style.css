@@ -1,0 +1,219 @@
+body{
+    background-color: #3c3c6e;
+
+}
+form{
+    display: flex;
+    gap: 20px;
+}
+
+.index{
+    color: ghostwhite;
+}
+
+.input-box{
+    width: 300px; /* Set the width of the box */
+    padding: 20px; /* Add some padding inside the box */
+    margin-left: 10px;
+    border: 2px solid #ccc; /* Add a border around the box */
+    border-radius: 10px; /* Optional: Round the corners of the box */
+    background-color: #f9f9f9; /* Set a background color */
+    box-shadow: 2px 2px 10px 3px rgba(246, 217, 69, 0.5); /* Optional: Add a shadow for some depth */
+    background-color: #3c3c6e;
+    height: 450px;
+
+}
+
+.input-box input[type="text"] {
+    width: 90%; /* Make the input fields take the full width of the box */
+    padding: 10px; /* Add some padding inside the inputs */
+    margin-bottom: 10px; /* Add space between the input fields */
+    border: 1px solid #ccc; /* Add a border to the inputs */
+    border-radius: 5px; /* Round the corners of the input fields */
+}
+
+/* Style the submit button */
+.input-box input[type="submit"] {
+    width: 100%; /* Make the button full width */
+    padding: 10px; /* Add padding inside the button */
+    background-color: #231e1e; /* Set the background color of the button */
+    color: #70cbea; /* Set the text color */
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Round the corners of the button */
+    cursor: pointer; /* Change the cursor to pointer on hover */
+    transition: text-shadow 1s ease-in-out, color 0.5s ease-in-out;
+}
+
+.input-box input[type="submit"]:hover {
+    text-shadow: 0 0 10px rgba(40, 241, 241, 0.8),
+    0 0 20px rgba(40, 241, 241, 0.8),
+    0 0 30px rgba(40, 241, 241, 0.8);
+    color: #70cbea; /* Optional: Slightly change the color on hover */
+}
+
+.description-box{
+    height: 170px;
+}
+
+.qualities-box{
+    width: 300px; /* Set the width of the box */
+    padding: 20px; /* Add some padding inside the box */
+    margin-left: 10px;
+    border: 2px solid #ccc; /* Add a border around the box */
+    border-radius: 10px; /* Optional: Round the corners of the box */
+    background-color: #f9f9f9; /* Set a background color */
+    box-shadow: 2px 2px 10px 3px rgba(246, 217, 69, 0.5); /* Optional: Add a shadow for some depth */
+    background-color: #3c3c6e;
+    height: 450px;
+    justify-content: space-between;
+    flex: column;
+}
+
+.qualities-box input[type="text"]{
+    width: 90%; /* Make the input fields take the full width of the box */
+    padding: 10px; /* Add some padding inside the inputs */
+    margin-bottom: 10px; /* Add space between the input fields */
+    border: 1px solid #ccc; /* Add a border to the inputs */
+    border-radius: 5px; /* Round the corners of the input fields */
+}
+
+.qualities-box p{
+    font-size: 20px;
+    color: ghostwhite;
+    text-shadow: 0 0 10px rgba(246, 217, 69, 0.5),
+    0 0 20px rgba(246, 217, 69, 0.5),
+    0 0 30px rgba(246, 217, 69, 0.5);
+}
+
+.experience-box{
+    width: 300px; /* Set the width of the box */
+    padding: 20px; /* Add some padding inside the box */
+    margin-left: 10px;
+    border: 2px solid #ccc; /* Add a border around the box */
+    border-radius: 10px; /* Optional: Round the corners of the box */
+    background-color: #f9f9f9; /* Set a background color */
+    box-shadow: 2px 2px 10px 3px rgba(246, 217, 69, 0.5); /* Optional: Add a shadow for some depth */
+    background-color: #3c3c6e;
+    height: 450px;
+    justify-content: space-between;
+    flex: column;
+}
+
+.experience-box input[type="text"]{
+    width: 40%; /* Make the input fields take the full width of the box */
+    padding: 10px; /* Add some padding inside the inputs */
+    margin-bottom: 10px; /* Add space between the input fields */
+    border: 1px solid #ccc; /* Add a border to the inputs */
+    border-radius: 5px; /* Round the corners of the input fields */
+}
+
+.experience-box p{
+    font-size: 20px;
+    color: ghostwhite;
+    text-shadow: 0 0 10px rgba(246, 217, 69, 0.5),
+    0 0 20px rgba(246, 217, 69, 0.5),
+    0 0 30px rgba(246, 217, 69, 0.5);
+}
+
+/* -------------------------------------------------------- personData html */
+
+.persondata{
+    color: ghostwhite;
+    text-shadow: 2px 2px 10px rgba(34, 12, 12, 1),
+    2px 2px 20px rgba(34, 12, 12, 1),
+    2px 2px 30px rgba(34, 12, 12, 1);
+}
+
+.display-information{
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid #1edadacc;
+    width: 300px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    line-height: 2;
+    color: wheat;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px 2px rgba(38, 205, 205, 2);
+}
+
+.display-information span{
+    color: #1bd5d5cc;
+    transition: text-shadow 1s ease-in-out, color 0.5s ease-in-out;
+}
+
+.display-information span:hover{
+    color: #1bd5d5cc;
+    text-shadow: 2px 2px 10px rgba(24, 195, 195, 0),
+    2px 2px 20px rgba(31, 191, 191, 0),
+    2px 2px 30px rgba(29, 202, 202, 0);
+}
+
+.more-button{
+    width: 200px;
+    padding-left: 1px;
+    text-align: left;
+    color: #21dfdfcc;
+    background-color: black;
+    border: 2px solid black;
+    transition: text-shadow 1s ease-in-out, color 0.5s ease-in-out;
+}
+
+.more-button:hover{
+    color: #1bd5d5cc;
+    text-shadow: 2px 2px 10px rgba(24, 195, 195, 2),
+    2px 2px 20px rgba(31, 191, 191, 2),
+    2px 2px 30px rgba(29, 202, 202, 2);
+}
+
+.linkedin{
+    width: 24px;  /* Set the width of the image */
+    height: 24px; /* Set the height of the image */
+    display: inline-block; /* Ensure it displays inline with text if necessary */
+}
+
+.description-text{
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.display-qualities{
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid #1edadacc;
+    width: 300px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    line-height: 2;
+    color: wheat;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px 2px rgba(38, 205, 205, 2);
+}
+
+.experience-container{
+    display: flex;
+
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid #1edadacc;
+    width: 300px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    line-height: 2;
+    color: wheat;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px 2px rgba(38, 205, 205, 2);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>Home</title>
+
+</head>
+<body>
+<h1 class="index">Enter your informations</h1>
+
+
+
+<form action="/persondata" method="post">
+    <div class="input-box">
+    <input type="text" name="firstName" placeholder="enter your first name">
+    <input type="text" name="lastName" placeholder="enter your last name">
+    <input type="text" name="mail" placeholder="enter your mail here">
+    <input type="text" name="number" placeholder="enter your phone number here">
+     <input type="text" name="profileUrl" placeholder="link for your linkedIn">
+        <div class="description-box">
+            <textarea name="description" placeholder="describe yourself"></textarea>
+        </div>
+
+        <input type="submit" value="send data">
+
+        </div>
+
+        <div class="qualities-box">
+            <p>Input your 5 best qualities</p>
+            <input type="text" name="qualities[0]" placeholder="Quality 1">
+            <input type="text" name="qualities[1]" placeholder="Quality 2">
+            <input type="text" name="qualities[2]" placeholder="Quality 3">
+            <input type="text" name="qualities[3]" placeholder="Quality 4">
+            <input type="text" name="qualities[4]" placeholder="Quality 5">
+
+        </div>
+
+        <div class="experience-box">
+            <p>Input your experiences</p>
+            <div class="experience-row">
+                <input type="text" name="title[0]" placeholder="job title">
+                <input type="text" name="company[0]" placeholder="company name">
+            </div>
+            <div class="experience-row">
+                <input type="text" name="title[1]" placeholder="job title">
+                <input type="text" name="company[1]" placeholder="company name">
+            </div>
+            <div class="experience-row">
+                <input type="text" name="title[2]" placeholder="job title">
+                <input type="text" name="company[2]" placeholder="company name">
+            </div>
+        </div>
+
+
+</form>
+
+</body>
+</html>
