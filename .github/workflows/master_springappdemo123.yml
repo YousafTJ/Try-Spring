@@ -23,8 +23,9 @@ jobs:
           distribution: 'microsoft'
 
       - name: Build with Maven
-      working-directory: ./
+        working-directory: ./  
         run: mvn clean install
+
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
